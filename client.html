@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="formulaire">
+        <h1>Formulaire</h1>
+        <form>
+            <div>
+                <label for="nom">Votre nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Nom" required>
+            </div>
+            <div>
+                <label for="nom">Votre prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Prenom" required>
+            </div>
+            <div>
+                <label for="adresse">Votre adresse</label>
+                <input type="text" id="adresse" name="adresse" placeholder="adresse" required>
+            </div>
+            <div>
+                <label for="nom">Votre code postal</label>
+                <input type="text" id="codepostal" name="codepostal" placeholder="code postal" required>
+            </div>
+            <div>
+                <label for="ville">Votre ville</label>
+                <input type="text" id="ville" name="ville" placeholder="ville" required>
+            </div>
+            <div>
+                <label for="tel">Votre numéro de téléphone</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="téléphone" required>
+            </div>
+            <div>
+                <label for="email">Votre e-mail</label>
+                <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+            </div>
+            <div>
+                <label for="civilité">Civilité </label>
+                <select name="civilité" id="civilité" required>
+                    <option value="" disabled selected hidden>Choisissez votre civilité</option>
+                    <option value="monsieur">Monsieur</option>
+                    <option value="madame">Madame</option>
+            </div>
+            <div>
+                <label for="login">Votre login</label>
+                <input type="text" id="login" name="login" placeholder="login" required>
+            </div>
+            <div>
+                <label for="password">Votre mot de passe</label>
+                <input type="password" id="mdp" name="mdp" placeholder="Mot de passe" required>
+            </div>
+            <div>
+                <label for="password">Confirmez votre mot de passe</label>
+                <input type="password" id="mdp2" name="mdp2" oncopy = "return false" onpaste = "return false" oncut = "return false" placeholder="Confirmer votre mot de passe" required>
+            </div>
+            <div>
+                <button type="submit">Envoyer mon message </button>
+            </div>
+        </form>
+    </div>
+    <script src="jquery-3.6.1.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
