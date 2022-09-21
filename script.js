@@ -1,8 +1,13 @@
-$('form').submit((event)=>{
-    event.preventDefault();//recup la valeur que j'ai écrit quand j'ai submit
-    let mdp = $('#mdp').val();
-    let mdpConfirmation = $('#mdp2').val();
-    if(mdp !== mdpConfirmation){
-        alert('Les mots de passe sont différents')
+$('#form').submit((event)=>{
+    event.preventDefault();//recup la valeur que j'ai écrit quand j'ai submit sans envoyer
+    if( $('#mdp').val() !== $('#mdp2').val()){
+        $('.invalid-feedback').show();
+        $('#mdp2').addClass('is-invalid');
     }
 })
+
+$(function(){
+    $("input[name='codepostal']").on('input', function (e) {
+      $(this).val($(this).val().replace(/[^0-9]/g, ''));
+    });
+});
